@@ -119,14 +119,14 @@ async function starts() {
 				success: '✔️Pronto ✔️',
 				error: {
 					stick: '❌ Falha, ocorreu um erro ao converter a imagem em um adesivo ❌',
-					Iv: '❌ Link inválido  ❌'
+					Iv: '❌ Link inválido ❌'
 				},
 				only: {
-					group: '❌ Este comando só pode ser usado em grupos ! ❌',
-					ownerG: '❌ Este comando só pode ser usado pelo grupo proprietário ! ❌',
-					ownerB: '❌ Este comando só pode ser usado pelo bot proprietário ! ❌',
-					admin: '❌ Este comando só pode ser usado por administradores de grupo ! ❌',
-					Badmin: '❌ Este comando só pode ser usado quando o bot se torna administrador ! ❌'
+					group: '❌ Este comando só pode ser usado em grupos !❌',
+					ownerG: '❌ Este comando só pode ser usado pelo grupo proprietário !❌',
+					ownerB: '❌ Este comando só pode ser usado pelo bot proprietário !❌',
+					admin: '❌ Este comando só pode ser usado por administradores de grupo !❌',
+					Badmin: '❌ Este comando só pode ser usado quando o bot se torna administrador !❌'
 				}
 			}
 
@@ -320,7 +320,7 @@ async function starts() {
                                 case 'donos':
                                         memein = await kagApi.memeindo()
                                         buffer = await getBuffer(`https://instagram.com/bruno0campos http://instagram.com/cuscuz_com_queijo`)
-                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: '(Legenda)'})
+                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'meus donos'})
                                         break
                                 case 'setprefix':
 					if (args.length < 1) return
@@ -617,7 +617,7 @@ async function starts() {
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
 						reply('Desativando com sucesso o recurso de boas-vindas neste grupo ✔️')
 					} else {
-						reply('1 para ativar, 0 para desativar ')
+						reply('1 para ativar, 0 para desativar')
 					}
                                       break
 				case 'clone':
