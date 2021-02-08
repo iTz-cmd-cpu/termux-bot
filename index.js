@@ -603,7 +603,7 @@ async function starts() {
 						reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
 					}
 					break
-				case 'bem-vindo:
+				case 'bem-vindo':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
